@@ -26,23 +26,342 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <form id="contactFrom">
-      <label for="name">Text Input:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email Input:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="mobile">Telephone Input:</label>
-      <input
-        type="tel"
-        id="mobile"
-        name="mobile"
-        pattern="^((?:\+91)?(?:[6-9]\d{9}))$"
-        required
-      />
-
-      <input type="submit" value="Submit" />
-    </form>
+    <nav>
+      <img src="./assets/images/Logo.png" alt="Piramal Aranya" />
+      <ul class="nav_items">
+        <li class="nav_item">home</li>
+        <li class="nav_item">overview</li>
+        <li class="nav_item">amenities</li>
+        <li class="nav_item">gallery</li>
+        <li class="nav_item">contact</li>
+      </ul>
+      <button class="nav_cta">Enquire Now</button>
+    </nav>
+    <main>
+      <section id="hero">
+        <p>mumbai</p>
+        <h1>project aranya</h1>
+        <h2>pirimal groups</h2>
+        <a href="#apartments">
+          <img src="./assets/icons/arrow-down.png" alt="" />
+          <img src="./assets/images/Scroll-Vector.png" alt="" />
+        </a>
+      </section>
+      <section id="apartments">
+        <div class="search_config">
+          <p>search your configuration</p>
+          <div class="search_options">
+            <div class="search_option">
+              <div class="search_option_icon">
+                <img src="./assets/icons/location.png" alt="" />
+              </div>
+              <p class="option_type">location</p>
+              <p class="option_value">south mumbai</p>
+            </div>
+            <div class="search_option">
+              <div class="search_option_icon">
+                <img src="./assets/icons/home.png" alt="" />
+              </div>
+              <p class="option_type">propety type</p>
+              <p class="option_value">2 bhk</p>
+            </div>
+            <div class="search_option">
+              <div class="search_option_icon">
+                <img src="./assets/icons/rupee.png" alt="" />
+              </div>
+              <p class="option_type">budget</p>
+              <p class="option_value">90 L -1.5Cr</p>
+            </div>
+            <button class="search_button">
+              <img src="./assets/icons/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="apartment_card">
+          <div class="apartment_images">
+            <img src="./assets/images/bldng-rect.png" alt="" />
+            <img
+              src="./assets/images/brdg-rect.png"
+              alt=""
+              class="apartment_image_back"
+            />
+          </div>
+          <h4>Mumbai</h4>
+          <h3>our apartments</h3>
+          <p>
+            Presenting Piramal Aranya, a high rise gated sanctuary that offers
+            luxuriant 2, 3 & 4 BHK homes inclusive of advanced wellness
+            technologies, dual-aspect blue and green views and a world-class
+            lifestyle crafted alongside the world’s leading partners at Rani
+            Baug, Byculla, South Mumbai.
+          </p>
+        </div>
+        <div class="apartment_card">
+          <div class="apartment_images">
+            <img src="./assets/images/room-rect.png" alt="" />
+            <img
+              src="./assets/images/frm-rect.png"
+              alt=""
+              class="apartment_image_back"
+            />
+          </div>
+          <h4>2 bed exclusive residences</h4>
+          <h3>2bhk-eastwing</h3>
+          <ul>
+            <li>All bedrooms with en-suite bathrooms</li>
+            <li>Apartments with harbour views</li>
+            <li>Master bedroom with corner windows offering panoramic views</li>
+            <li>All shafts on the external face</li>
+            <li>Kitchen with dry balcony</li>
+            <li>
+              Ease of combining apartments to create exclusive wing apartment
+              with expansive living & dining area
+            </li>
+          </ul>
+        </div>
+        <div class="apartment_numbers">
+          <div class="apartment_number">
+            <p class="aparment_number_value">50+</p>
+            <p class="aparment_number_type">amenities</p>
+          </div>
+          <div class="apartment_number">
+            <p class="aparment_number_value">250</p>
+            <p class="aparment_number_type">apartments</p>
+          </div>
+          <div class="apartment_number">
+            <p class="aparment_number_value">
+              9,290 <span class="small">sqmt</span>
+            </p>
+            <p class="aparment_number_type">recreational space</p>
+          </div>
+          <div class="apartment_number">
+            <p class="aparment_number_value">1,200</p>
+            <p class="aparment_number_type">slot car parking</p>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <h3>ARANYA'S SERVICES</h3>
+        <h4>30+ PREMIUM AMENTIES</h4>
+        <div class="services_container">
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/reception.png" alt="" />
+            </div>
+            <p class="service_name">reception</p>
+            <p class="service_value">6 area for receptionist serve 24/7</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/security.png" alt="" />
+            </div>
+            <p class="service_name">security</p>
+            <p class="service_value">6 area for receptionist serve 24/7</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/ringing.png" alt="" />
+            </div>
+            <p class="service_name">FIRE ALARM</p>
+            <p class="service_value">Automatic fire extinguishing system</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/car-parking.png" alt="" />
+            </div>
+            <p class="service_name">PARKING</p>
+            <p class="service_value">Parking area with extra capacity</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/board-meeting.png" alt="" />
+            </div>
+            <p class="service_name">CONFERENCE ROOM</p>
+            <p class="service_value">5 conference room setup in each block</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/air-conditioner.png" alt="" />
+            </div>
+            <p class="service_name">CONDITIONING</p>
+            <p class="service_value">ensure ventilation and air conditioning</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/shopping-cart.png" alt="" />
+            </div>
+            <p class="service_name">SUPERMARKET</p>
+            <p class="service_value">5 supermarket in each block</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/massage.png" alt="" />
+            </div>
+            <p class="service_name">SPA AND MASSAGE</p>
+            <p class="service_value">
+              Spa and Massage service for better health
+            </p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/swimming.png" alt="" />
+            </div>
+            <p class="service_name">4 SEASON POOL</p>
+            <p class="service_value">5 star indoor swimming 4 seasons</p>
+          </div>
+        </div>
+      </section>
+      <section id="amenities">
+        <img
+          src="./assets/images/gym-banner.png"
+          alt=""
+          class="amenities_banner"
+        />
+        <h3>THE ADVANTAGES</h3>
+        <h4>AMENITIES</h4>
+        <div class="aminities_container">
+          <div class="aminities_card">
+            <span>1</span>
+            <h5>top CLASS CLUB & FACILITIES</h5>
+            <img src="./assets/images/gym-sqr.png" alt="" />
+            <p>
+              With a wide range of active and relaxing hubs, kids as well as
+              adult spaces and curated indoor & outdoor activities, be tempted
+              to try something new every day.
+            </p>
+          </div>
+          <div class="aminities_card">
+            <span>2</span>
+            <h5>Tower Exclusive Amenities & Facilities</h5>
+            <img src="./assets/images/room-sqr.png" alt="" />
+            <p>
+              With a wide range of active and relaxing hubs, kids as well as
+              adult spaces and curated indoor & outdoor activities, be tempted
+              to try something new every day.
+            </p>
+          </div>
+          <div class="aminities_card">
+            <span>3</span>
+            <h5>Recreational Amenities & Facilities</h5>
+            <img src="./assets/images/grl-sqr.png" alt="" />
+            <p>
+              With a wide range of active and relaxing hubs, kids as well as
+              adult spaces and curated indoor & outdoor activities, be tempted
+              to try something new every day.
+            </p>
+          </div>
+          <div class="aminities_card">
+            <span>4</span>
+            <h5>Multipurpose Games Room</h5>
+            <img src="./assets/images/table-sqr.png" alt="" />
+            <p>
+              With a wide range of active and relaxing hubs, kids as well as
+              adult spaces and curated indoor & outdoor activities, be tempted
+              to try something new every day.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="location">
+        <p class="title">SPECTACULAR SURROUNDINGS AS FAR AS THE EYE CAN SEE</p>
+        <p class="desc">
+          Piramal Aranya is an ode to perfection. It balances contemporary
+          design with the scenic natural beauty of its environment. Every
+          residence invites you to soak in the surroundings, from the endless
+          greenery of Rani Baug on the western side and the shimmering Arabian
+          Sea on the east. Avyan at Piramal Aranya will be home to something
+          truly spectacular with premium dual aspect living
+        </p>
+        <div class="location_numbers">
+          <div class="location_number">
+            <p class="location_number_value">66%</p>
+            <p class="location_number_type">Botanical garden views</p>
+          </div>
+          <div class="location_number">
+            <p class="location_number_value">33%</p>
+            <p class="location_number_type">
+              Mumbai harbour and botanical garden views
+            </p>
+          </div>
+          <div class="location_number">
+            <p class="location_number_value">66%</p>
+            <p class="location_number_type">Mumbai harbour views</p>
+          </div>
+        </div>
+        <h3>location</h3>
+        <h4>NEIGHBORHOOD</h4>
+        <div class="locations_container">
+          <div class="location_card">
+            <span class="location_dot"></span>
+            <p>Bhau Daji Lad Museum</p>
+            <span class="location_distance">3.5 Km Away</span>
+          </div>
+          <div class="location_card">
+            <span class="location_dot"></span>
+            <p>St. Paul's Tamil Church</p>
+            <span class="location_distance">3.5 Km Away</span>
+          </div>
+          <div class="location_card">
+            <span class="location_dot"></span>
+            <p>Magen David Synagogue</p>
+            <span class="location_distance">3.5 Km Away</span>
+          </div>
+          <div class="location_card">
+            <span class="location_dot"></span>
+            <p>Byculla Club - Fire Temple</p>
+            <span class="location_distance">3.5 Km Away</span>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h3>contact us</h3>
+        <p>
+          Please enter details below and we shall get in touch with you shortly
+        </p>
+        <form id="contactFrom">
+          <label for="name">
+            <img src="./assets/icons/user.png" alt="name" />
+            <input type="text" id="name" name="name" required
+          /></label>
+          <label for="email">
+            <img src="./assets/icons/envelope.png" alt="email" />
+            <input type="email" id="email" name="email" required
+          /></label>
+          <label for="mobile">
+            <img src="./assets/icons/smartphone.png" alt="mobile" />
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              pattern="^((?:\+91)?(?:[6-9]\d{9}))$"
+              required
+          /></label>
+          <input type="submit" value="Submit" />
+        </form>
+        <img src="./assets/images/map.png" alt="" />
+      </section>
+      <section id="call">
+        <h5>call us</h5>
+        <button>
+          <img src="./assets/icons/call.png" alt="call" />
+        </button>
+        <p>+ 022 506 47538</p>
+        <div class="socials_container">
+          <div class="social">
+            <img src="./assets/icons/twitter.png" alt="" />
+          </div>
+          <div class="social">
+            <img src="./assets/icons/facebook.png" alt="" />
+          </div>
+          <div class="social">
+            <img src="./assets/icons/instagram.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/images/icon.png" alt="Logo" />
+      <p>&copy; 2023 <span>Piramal</span>. ALL RIGHTS RESERVED.</p>
+    </footer>
   </body>
 </html>
