@@ -274,7 +274,7 @@
           Sea on the east. Avyan at Piramal Aranya will be home to something
           truly spectacular with premium dual aspect living
         </p>
-        <div class="location_numbers">
+        <div class="location_numbers_container">
           <div class="location_number">
             <p class="location_number_value">66%</p>
             <p class="location_number_type">Botanical garden views</p>
@@ -290,57 +290,71 @@
             <p class="location_number_type">Mumbai harbour views</p>
           </div>
         </div>
-        <h3>location</h3>
+        <h3>LOCATION</h3>
         <h4>NEIGHBORHOOD</h4>
         <div class="locations_container">
           <div class="location_card">
-            <span class="location_dot"></span>
+            <span class="location_dot">&#x2022;</span>
             <p>Bhau Daji Lad Museum</p>
             <span class="location_distance">3.5 Km Away</span>
           </div>
           <div class="location_card">
-            <span class="location_dot"></span>
+            <span class="location_dot">&#x2022;</span>
             <p>St. Paul's Tamil Church</p>
             <span class="location_distance">3.5 Km Away</span>
           </div>
           <div class="location_card">
-            <span class="location_dot"></span>
+            <span class="location_dot">&#x2022;</span>
             <p>Magen David Synagogue</p>
             <span class="location_distance">3.5 Km Away</span>
           </div>
           <div class="location_card">
-            <span class="location_dot"></span>
+            <span class="location_dot">&#x2022;</span>
             <p>Byculla Club - Fire Temple</p>
             <span class="location_distance">3.5 Km Away</span>
           </div>
         </div>
       </section>
       <section id="contact">
-        <h3>contact us</h3>
-        <p>
-          Please enter details below and we shall get in touch with you shortly
-        </p>
         <form id="contactFrom">
+          <h3>contact us</h3>
+          <p>
+            Please enter details below and we shall get in touch with you
+            shortly
+          </p>
           <label for="name">
             <img src="./assets/icons/user.png" alt="name" />
-            <input type="text" id="name" name="name" required
-          /></label>
-          <label for="email">
-            <img src="./assets/icons/envelope.png" alt="email" />
-            <input type="email" id="email" name="email" required
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              name="name"
+              required
           /></label>
           <label for="mobile">
             <img src="./assets/icons/smartphone.png" alt="mobile" />
             <input
               type="tel"
+              placeholder="Contact Number"
               id="mobile"
               name="mobile"
               pattern="^((?:\+91)?(?:[6-9]\d{9}))$"
               required
           /></label>
+          <label for="email">
+            <img src="./assets/icons/envelope.png" alt="email" />
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              name="email"
+              required
+          /></label>
           <input type="submit" value="Submit" />
         </form>
-        <img src="./assets/images/map.png" alt="" />
+        <div class="map_image">
+          <img src="./assets/images/map.png" alt="" />
+        </div>
       </section>
       <section id="call">
         <h5>call us</h5>
