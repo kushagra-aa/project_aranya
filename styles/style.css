@@ -407,9 +407,58 @@ body {
         color: var(--black);
         background: var(--white);
         padding: 0;
-        padding-bottom: 4rem;
+        padding-bottom: 10rem;
+        & > img.amenities_banner {
+          width: var(--body-width);
+          background: #000;
+        }
+
         & > .amenities_inner {
           padding: 2rem var(--padding-x);
+
+          & > .aminities_container {
+            --image-size: 200px;
+
+            display: flex;
+            gap: 0.5rem;
+
+            & > .aminities_card {
+              flex: 1;
+              padding: 0 2rem;
+              border-left: 1px solid var(--gray);
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+
+              & > span {
+                color: var(--light-green);
+                font-weight: 600;
+                font-size: 1.2rem;
+              }
+
+              & > h5 {
+                font-weight: 800;
+                font-size: 1rem;
+                text-transform: uppercase;
+              }
+
+              & > img {
+                height: var(--image-size);
+                width: var(--image-size);
+              }
+              & > p {
+                font-weight: 300;
+                font-size: 0.7rem;
+              }
+
+              &:nth-of-type(2) {
+                transform: translateY(5rem);
+              }
+              &:nth-of-type(4) {
+                transform: translateY(7rem);
+              }
+            }
+          }
         }
       }
       &#location {
