@@ -66,7 +66,9 @@ body {
 
   & > main {
     & > section {
-      padding: 2rem 7rem;
+      --padding-x: 7rem;
+
+      padding: 2rem var(--padding-x);
 
       & h3 {
         text-align: center;
@@ -336,10 +338,79 @@ body {
       &#services {
         color: var(--black);
         background: var(--white);
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+
+        & > .services_container {
+          margin-top: 8rem;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+
+          & > .service_card {
+            --icon-size: 62px;
+            --icon-padding: 30px;
+
+            padding: 1rem 1.5rem;
+            display: grid;
+            grid-template-columns: var(--icon-size) 1fr;
+            justify-items: self-start;
+            align-items: center;
+            gap: 0.2rem 0.5rem;
+
+            & > p {
+              grid-column: 2/3;
+              color: var(--black);
+              text-transform: capitalize;
+
+              &.service_name {
+                font-size: 1.15rem;
+                align-self: self-end;
+              }
+              &.service_value {
+                align-self: self-start;
+                font-size: 0.75rem;
+              }
+            }
+            & > .service_icon {
+              height: var(--icon-size);
+              width: var(--icon-size);
+              grid-row: 1/3;
+              position: relative;
+              isolation: isolate;
+              overflow: hidden;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background: var(--light-green);
+                opacity: 0.1;
+                height: 100%;
+                width: 100%;
+              }
+
+              & > img {
+                height: calc(var(--icon-size) - var(--icon-padding));
+                width: calc(var(--icon-size) - var(--icon-padding));
+              }
+            }
+          }
+        }
       }
       &#amenities {
-        color: var(--white);
-        background: var(--blue);
+        color: var(--black);
+        background: var(--white);
+        padding: 0;
+        padding-bottom: 4rem;
+        & > .amenities_inner {
+          padding: 2rem var(--padding-x);
+        }
       }
       &#location {
         color: var(--white);
