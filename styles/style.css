@@ -65,6 +65,30 @@ body {
   }
 
   & > main {
+    & > a.cta {
+      text-decoration: none;
+      display: grid;
+      grid-template-areas: "imgs";
+      justify-items: center;
+      align-items: center;
+
+      & > img {
+        grid-area: imgs;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover {
+        & > img {
+          &:not(.cta_icon) {
+            transform: rotate(10deg);
+          }
+          &.cta_icon {
+            transform: translateY(10px);
+          }
+        }
+      }
+    }
+
     & > section {
       --padding-x: 7rem;
 
@@ -88,7 +112,6 @@ body {
         font-family: "Gabriela", sans-serif;
         font-size: 3.25rem;
         font-weight: 500;
-        letter-spacing: -1.5px;
       }
 
       &#hero {
@@ -151,7 +174,6 @@ body {
           text-transform: uppercase;
         }
       }
-
       &#apartments {
         color: var(--white);
         background: var(--blue);
@@ -651,30 +673,79 @@ body {
       &#call {
         color: var(-black);
         background: var(--white);
-      }
-    }
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
 
-    & > a.cta {
-      text-decoration: none;
-      display: grid;
-      grid-template-areas: "imgs";
-      justify-items: center;
-      align-items: center;
+        & > h5 {
+          font-size: 1.5rem;
+          font-family: "Gabriela", sans-serif;
+          font-weight: 500;
+          letter-spacing: 1.5px;
+          text-transform: capitalize;
+        }
 
-      & > img {
-        grid-area: imgs;
-        transition: all 0.5s ease-in-out;
-      }
+        & > button {
+          padding: 1.5rem;
+          background: var(--blue);
+          border-radius: 100%;
+          outline: none;
+          border: none;
+          cursor: pointer;
 
-      &:hover {
-        & > img {
-          &:not(.cta_icon) {
-            transform: rotate(10deg);
-          }
-          &.cta_icon {
-            transform: translateY(10px);
+          &:hover {
+            filter: brightness(90%);
           }
         }
+
+        & > p {
+          margin-bottom: 8rem;
+          font-size: 3rem;
+          font-family: "Gabriela", sans-serif;
+          font-weight: 300;
+
+          & > span {
+            font-weight: 800;
+          }
+        }
+
+        & > .socials_container {
+          display: flex;
+          gap: 1rem;
+
+          & > .social {
+            padding: 0.5rem;
+            background: white;
+            border-radius: 100%;
+
+            &:first-of-type {
+              background: var(--light-green);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > footer {
+    padding-bottom: 3rem;
+    background: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & > p {
+      font-size: 1.2rem;
+
+      & > span {
+        font-weight: 800;
       }
     }
   }
