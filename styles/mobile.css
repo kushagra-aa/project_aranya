@@ -1,0 +1,144 @@
+/* 
+    mobile: 600px 
+    */
+
+/* Mobile Mode */
+@media screen and (max-width: 600px) {
+  body {
+    --nav-height: 8vh;
+
+    & > nav {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+
+      & > ul {
+        display: none;
+      }
+      & > .nav_cta {
+        padding: 0.25rem 1rem;
+      }
+    }
+    & > main {
+      & > section {
+        --padding-x: 3rem;
+
+        & h4 {
+          font-size: 3rem;
+        }
+        &#hero {
+          & > h1 {
+            font-size: 4rem;
+          }
+        }
+        &#apartments {
+          & > .search_config {
+            & > .search_options {
+              padding: 1rem;
+              flex-wrap: wrap;
+              & > .search_button {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+          & > .apartment_card {
+            display: flex;
+            flex-direction: column;
+            & > .apartment_images {
+              --small-image-height: calc(var(--image-height) / 1.5);
+              --small-image-width: calc(var(--image-width) / 1.5);
+
+              height: calc(var(--small-image-height) + 120px);
+              width: calc(var(--small-image-width) + 120px);
+
+              & > img {
+                height: var(--small-image-height);
+                width: var(--small-image-width);
+              }
+            }
+
+            & > h4 {
+              align-self: flex-start;
+            }
+            & > h3 {
+              font-size: 2rem;
+              align-self: flex-start;
+            }
+            & > p {
+              width: 100%;
+              align-self: flex-start;
+            }
+          }
+          & > .apartment_numbers_container {
+            flex-wrap: wrap;
+            gap: 1rem 0.5rem;
+          }
+        }
+        &#services {
+          & > .services_container {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+        &#amenities {
+          & > .amenities_inner {
+            & > .aminities_container {
+              flex-direction: column;
+              & > .aminities_card {
+                &:nth-of-type(2) {
+                  transform: translateY(0);
+                }
+                &:nth-of-type(4) {
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
+        }
+        &#location {
+          & > p {
+            width: 100%;
+            &.title {
+              font-size: 1.5rem;
+            }
+          }
+          & > .location_numbers_container {
+            flex-wrap: wrap;
+          }
+          & > .locations_container {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        &#contact {
+          & > form {
+            padding: 0 1.5rem;
+
+            margin-bottom: 2rem;
+
+            & > h3 {
+              font-size: 2.5rem;
+            }
+            & > p {
+              width: 100%;
+            }
+            & > input[type="submit"] {
+              width: 100%;
+            }
+          }
+          & > .map_image {
+            display: none;
+          }
+        }
+        &#call {
+          & > p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
